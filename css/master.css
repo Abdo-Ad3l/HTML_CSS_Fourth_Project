@@ -833,6 +833,13 @@ ul {
 .profile-page .info-box .toggle-checkbox:checked + .toggle-switch::before {
   left: 62px;
 }
+
+@media (max-width: 767px) {
+  .profile-page .other-data {
+    flex-direction: column;
+  }
+}
+
 .other-data .skills-card {
   flex-grow: 1;
 }
