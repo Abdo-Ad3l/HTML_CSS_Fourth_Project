@@ -241,7 +241,7 @@ ul {
 
 @media (max-width: 767px) {
   .wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: minmax(200px, 1fr);
     margin-right: 10px;
     margin-left: 10px;
     gap: 10px;
@@ -834,6 +834,8 @@ ul {
   left: 62px;
 }
 
+/* Start */
+
 @media (max-width: 767px) {
   .profile-page .other-data {
     flex-direction: column;
@@ -859,6 +861,11 @@ ul {
   flex-grow: 2;
 }
 
+@media (max-width: 767px) {
+  .profile-page .activity {
+    flex-direction: column;
+  }
+}
 .profile-page .activity:not(:last-child) {
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
@@ -869,6 +876,13 @@ ul {
   width: 64px;
   height: 64px;
   margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .profile-page .activity img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1025,7 +1039,7 @@ ul {
 
 @media (max-width: 767px) {
   .courses-page {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: minmax(200px, 1fr);
     margin-left: 10px;
     margin-right: 10px;
     gap: 10px;
